@@ -9,6 +9,7 @@ self: super: let
   libsForQt5 = unstable.libsForQt513;
 in
 {
-  protonmail-bridge = libsForQt5.callPackage ./protonmail-bridge {};
+  protonmail-bridge-bin = libsForQt5.callPackage ./protonmail-bridge-bin {};
+  protonmail-bridge = self.callPackage ./protonmail-bridge {};
   qt513 = self.callPackage ./qt5.13 {};
 }
