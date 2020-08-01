@@ -1,4 +1,4 @@
 self: super:
 {
-  protonmail-bridge = self.callPackage ./protonmail-bridge {};
+  protonmail-desktop-bridge = self.callPackage ./protonmail-bridge {};
 }
